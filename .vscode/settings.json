@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "/home/yunjinli/git_repo/vision_pkg",
+    "cmake.configureOnOpen": true,
+    "files.associations": {
+        "string": "cpp"
+    }
+}
