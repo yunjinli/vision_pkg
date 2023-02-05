@@ -37,7 +37,9 @@ rm -rf "$BUILD_OPENCV"
 mkdir -p "$BUILD_OPENCV"
 pushd "$BUILD_OPENCV"
 cmake ../opencv "${COMMON_CMAKE_ARGS[@]}" \
-    -DBUILD_EXAMPLES=OFF
+    -DBUILD_EXAMPLES=OFF \
+    -DWITH_CUDA=ON \
+    -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules/ 
 make -j$NUM_PARALLEL_BUILDS
 popd
 
